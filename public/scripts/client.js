@@ -3,13 +3,15 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
+//on pageload
+$(() => loadTweets());
+//safe html
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
-
+//get time function
 const time = function(time) {
   const now = new Date(Date.now());
   const past = new Date(time);
@@ -30,7 +32,7 @@ const time = function(time) {
     return "Now";
   }
 };
-
+//make the html/tweet template function
 const createTweetElement = function(tweetObj) {
   const safeContent = `<p class="ctx">${escape(tweetObj.content.text)}</p>`;
   const options = {
@@ -85,11 +87,10 @@ const loadTweets = function() {
     renderTweets(res);
   });
 };
-
-$(() => loadTweets());
-
+//submit actions
 $("form").submit(function(event) {
   event.preventDefault();
+  //in case of error
   if ($("#inputTweet").val() === "" || $("#inputTweet").val() === null) {
     $("#error").text("You've entered an empty value");
     setTimeout(function() {
@@ -97,6 +98,7 @@ $("form").submit(function(event) {
     }, 2500);
     return;
   }
+  //in case of error
   if ($("#inputTweet").val().length > 140) {
     $("#error").text("You've exceeded the limit");
     setTimeout(function() {
@@ -104,11 +106,12 @@ $("form").submit(function(event) {
     }, 2500);
     return;
   }
-  console.log("Button clicked, performing ajax call...");
+  //post
   $.ajax("/tweets", { method: "POST", data: $(this).serialize() }).then(
     function(res) {
       loadTweet();
     }
   );
+  //empty the textarea
   $("#inputTweet").val("");
 });
