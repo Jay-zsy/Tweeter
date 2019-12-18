@@ -53,6 +53,14 @@ nav span:hover {
     }
 }
 
-.fa-chevron-up:hover {
-    color: #A4B1D4
+@media only screen and (max-width: 1024px) {
+    .fa-chevron-up {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .fa-chevron-up {
+        font-size: 40px;
+    }
 }

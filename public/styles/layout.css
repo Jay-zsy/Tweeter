@@ -42,3 +42,9 @@ main {
   margin: 120px 15px 60px 15px;
   background: transparent;
 }
+
+@media only screen and (max-width: 780px) {
+  body {
+    font-size: 0.8em;
+  }
+}

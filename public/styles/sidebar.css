@@ -40,3 +40,19 @@ h3 {
     margin: 0;
     text-align: center;
 }
+
+@media only screen and (max-width: 780px) {
+    div {
+        width: 240px;
+        height: 188px;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+}
