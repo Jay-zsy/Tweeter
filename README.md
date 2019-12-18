@@ -28,5 +28,5 @@ Error validation in header.
 
 ## Final Product
 
-!["Index page"](https://github.com/hollowic/TinyApp/blob/master/ss/Screen%20Shot%202019-12-12%20at%209.43.06%20AM.png?raw=true)
-!["Login Page"](https://github.com/hollowic/TinyApp/blob/master/ss/Screen%20Shot%202019-12-12%20at%209.43.28%20AM.png?raw=true)
+!["Index Page"](https://github.com/hollowic/Tweeter/blob/master/public/images/Screen%20Shot%202019-12-18%20at%2011.24.38%20AM.png?raw=true)
+!["Index Page"](https://github.com/hollowic/Tweeter/blob/master/public/images/Screen%20Shot%202019-12-18%20at%2011.28.57%20AM.png?raw=true)
