@@ -5,9 +5,17 @@
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+*::selection {
+  background-color: #faed27;
 }
 
 /*
@@ -18,8 +26,17 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  width: 70%;
+  background-color: #f4f1ec;
+  margin: 120px 15px 60px 15px;
+}

@@ -1,0 +1,38 @@
+article {
+    border: 5px solid #545149;
+    margin: 20px 0;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.tweet-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctx {
+    border-bottom: 5px solid #545149;
+}
+
+.tweet-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+article:hover {
+    box-shadow: 5px 10px #888888;
+    opacity: 1;
+    background: linear-gradient(#A4B1D4, #E7B0E0);
+}
+
+article:hover .hover-content {
+    display: block
+}
+
+.hover-content {
+    display: none
+}
+
+article:hover .no-hover-content {
+    display: none;
+}

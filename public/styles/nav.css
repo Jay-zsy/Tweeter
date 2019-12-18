@@ -1,0 +1,40 @@
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: #D4C6A4;
+    color: #FFFFFF;
+    display: flex;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed
+}
+
+nav span {
+    margin: 1.5em;
+    padding: 5px;
+    font-family: 'Bungee', cursive;
+}
+
+nav span:hover {
+    background: -webkit-linear-gradient(#A4B1D4, #E7B0E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+}
+
+.fa-chevron-up {
+    font-size: 80px;
+    opacity: 0.8;
+    color: linear-gradient(#A4B1D4, #E7B0E0);
+    position: fixed;
+    left: 35%;
+    bottom: 5px;
+}
+
+.fa-chevron-up:hover {
+    background: -webkit-linear-gradient(#A4B1D4, #E7B0E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+}
