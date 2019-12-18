@@ -16,25 +16,43 @@ nav span {
     font-family: 'Bungee', cursive;
 }
 
+#error {
+    color: rgb(220, 20, 60);
+}
+
+#write {
+    cursor: pointer;
+}
+
 nav span:hover {
-    background: -webkit-linear-gradient(#A4B1D4, #E7B0E0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #A4B1D4;
     opacity: 1;
 }
 
 .fa-chevron-up {
+    display: none;
+    z-index: 99;
     font-size: 80px;
-    opacity: 0.8;
-    color: linear-gradient(#A4B1D4, #E7B0E0);
+    color: #A4B1D4;
     position: fixed;
     left: 35%;
     bottom: 5px;
+    cursor: pointer;
+    animation: bob 1.5s linear infinite;
+}
+
+@keyframes bob {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 30px;
+    }
 }
 
 .fa-chevron-up:hover {
-    background: -webkit-linear-gradient(#A4B1D4, #E7B0E0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
+    color: #A4B1D4
 }

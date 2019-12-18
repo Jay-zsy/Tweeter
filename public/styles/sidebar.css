@@ -4,24 +4,39 @@
     background-color: #f4f1ec;
     position: relative;
     margin-top: 120px;
+    background: transparent
 }
 
 div {
     position: fixed;
     top: 30%;
     left: 5%;
-    background-image: url("../images/asfalt-dark.png");
-    width: 30%;
-    height: 50%;
+    width: 320px;
+    height: 250px;
 }
 
 .profile {
     width: 200px;
     height: 200px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
+}
+
+.profile:hover {
+    animation: spintowin 0.5s linear infinite;
+}
+
+@keyframes spintowin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 h3 {
+    margin: 0;
     text-align: center;
 }

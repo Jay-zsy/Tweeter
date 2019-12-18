@@ -4,7 +4,8 @@ textarea {
     border: 0;
     background-color: #f4f1ec;
     border-bottom: 5px solid #545149;
-    display: block
+    display: block;
+    background: transparent;
 }
 
 input {
@@ -19,6 +20,6 @@ input:focus {
 }
 
 .counter {
-    font-family: 'Bungee', cursive;
     float: right;
+    font-family: 'Bungee', cursive;
 }

@@ -2,7 +2,7 @@ article {
     border: 5px solid #545149;
     margin: 20px 0;
     padding: 10px;
-    opacity: 0.8;
+    opacity: 0.74;
 }
 
 .tweet-header {
@@ -22,11 +22,12 @@ article {
 article:hover {
     box-shadow: 5px 10px #888888;
     opacity: 1;
-    background: linear-gradient(#A4B1D4, #E7B0E0);
+    background: linear-gradient(rgba(164, 177, 212, 0.6), rgba(231, 176, 224, 0.6));
 }
 
 article:hover .hover-content {
-    display: block
+    display: block;
+    cursor: pointer;
 }
 
 .hover-content {
@@ -35,4 +36,10 @@ article:hover .hover-content {
 
 article:hover .no-hover-content {
     display: none;
+}
+
+person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

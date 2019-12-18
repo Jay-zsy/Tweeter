@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-image: url("../images/asfalt-dark.png");
 }
 
 /*
@@ -39,4 +40,5 @@ main {
   width: 70%;
   background-color: #f4f1ec;
   margin: 120px 15px 60px 15px;
+  background: transparent;
 }

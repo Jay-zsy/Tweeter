@@ -91,11 +91,17 @@ $(() => loadTweets());
 $("form").submit(function(event) {
   event.preventDefault();
   if ($("#inputTweet").val() === "" || $("#inputTweet").val() === null) {
-    console.log("There is no god");
+    $("#error").text("You've entered an empty value");
+    setTimeout(function() {
+      $("#error").text("");
+    }, 2500);
     return;
   }
   if ($("#inputTweet").val().length > 140) {
-    console.log("Chill bro");
+    $("#error").text("You've exceeded the limit");
+    setTimeout(function() {
+      $("#error").text("");
+    }, 2500);
     return;
   }
   console.log("Button clicked, performing ajax call...");
