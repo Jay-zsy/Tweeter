@@ -3,6 +3,8 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+@import url('https://fonts.googleapis.com/css?family=Bungee|Roboto:400,700&display=swap');
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

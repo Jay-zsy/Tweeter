@@ -112,6 +112,8 @@ $("form").submit(function(event) {
       loadTweet();
     }
   );
-  //empty the textarea
+  //empty the textarea then reset the counter styles
   $("#inputTweet").val("");
+  $(".counter")[0].innerHTML = 140;
+  $(".counter")[0].style.color = "#545149";
 });
