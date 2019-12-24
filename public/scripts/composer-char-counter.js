@@ -25,14 +25,15 @@ $(document).ready(function() {
   });
   //click event to scroll up with nav
   $("#write").click(function() {
-    if (document.documentElement.scrollTop < 150) {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 160;
-      $("textarea")[0].focus();
-    } else {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-      $("textarea")[0].focus();
-    }
+    // if (document.documentElement.scrollTop < 150) {
+    //   document.body.scrollTop = 0;
+    //   document.documentElement.scrollTop = 160;
+    //   $("textarea")[0].focus();
+    // } else {
+    //   document.body.scrollTop = 0;
+    //   document.documentElement.scrollTop = 0;
+    //   $("textarea")[0].focus();
+    // }
+    $("form").toggle(400);
   });
 });
